@@ -1,0 +1,12 @@
+{
+  "name": "design-my-faith-workspace",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Design My Faith workspace with Mission Merch Studio as the active deployable app.",
+  "scripts": {
+    "dev": "npm --prefix projects/mission-merch-studio run dev",
+    "build": "npm --prefix projects/mission-merch-studio run build",
+    "preview": "npm --prefix projects/mission-merch-studio run preview",
+    "install:app": "npm install --prefix projects/mission-merch-studio"
+  }
+}
