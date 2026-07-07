@@ -1,0 +1,12 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "npm install --prefix projects/mission-merch-studio",
+  "buildCommand": "npm run build --prefix projects/mission-merch-studio",
+  "outputDirectory": "projects/mission-merch-studio/dist",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/"
+    }
+  ]
+}
