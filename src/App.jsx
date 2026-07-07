@@ -1,4 +1,5 @@
 import { ArrowRight, Church, FileImage, Globe2, HandHeart, PackageCheck, Palette, ShieldCheck, Sparkles, Truck, UploadCloud } from 'lucide-react';
+import { designMyFaithLogo } from './assets/design-my-faith-logo-data.js';
 
 const products = ['T-shirts', 'Hoodies', 'Sweatshirts', 'Tote bags', 'Mugs', 'Posters', 'Journals'];
 const audiences = ['Churches', 'Missionaries', 'Charities', 'Ministries', 'Youth groups', 'Christian events'];
@@ -22,11 +23,7 @@ function App() {
     <main>
       <header className="site-header">
         <a className="brand" href="#top" aria-label="Design My Faith home">
-          <span className="brand-mark">DMF</span>
-          <span>
-            <strong>Design My Faith</strong>
-            <small>Mission Merch Studio</small>
-          </span>
+          <img className="brand-logo" src={designMyFaithLogo} alt="Design My Faith" />
         </a>
         <nav aria-label="Primary navigation">
           <a href="#how">How it works</a>
@@ -39,6 +36,7 @@ function App() {
 
       <section id="top" className="hero section-grid">
         <div className="hero-copy">
+          <img className="hero-logo" src={designMyFaithLogo} alt="Design My Faith" />
           <span className="eyebrow"><Sparkles size={16} /> Christian print studio · manual fulfilment</span>
           <h1>Custom Christian merch for churches, missions & ministries.</h1>
           <p>
@@ -144,9 +142,9 @@ function App() {
       </section>
 
       <section id="start" className="final-cta">
-        <span className="eyebrow">Vercel target</span>
-        <h2>This root app is now aligned to the existing design-my-faith Vercel project.</h2>
-        <p>The repository root now builds directly with Vite, so the existing Vercel project does not need a subfolder workaround.</p>
+        <span className="eyebrow">Design My Faith</span>
+        <h2>Artwork Studio, custom merch, manual fulfilment and mission fundraising in one platform.</h2>
+        <p>This deployment is now aligned to the existing Vercel project and uses the new Design My Faith brand mark.</p>
       </section>
     </main>
   );
