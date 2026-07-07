@@ -18,6 +18,33 @@ Project folder:
 projects/mission-merch-studio/
 ```
 
+## Vercel deployment
+
+This repository now includes a deployable React/Vite MVP shell for Mission Merch Studio.
+
+Vercel can be imported from the repository root because `vercel.json` is configured to build the app from:
+
+```text
+projects/mission-merch-studio
+```
+
+Recommended Vercel settings if you configure it manually:
+
+```text
+Framework Preset: Vite
+Install Command: npm install --prefix projects/mission-merch-studio
+Build Command: npm run build --prefix projects/mission-merch-studio
+Output Directory: projects/mission-merch-studio/dist
+```
+
+Local commands:
+
+```bash
+npm run install:app
+npm run dev
+npm run build
+```
+
 ## Build rule
 
 GitHub is the source of truth. Lovable should only be used for visual reference or limited prototyping when explicitly approved.
